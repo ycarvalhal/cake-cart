@@ -2,8 +2,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 10px 0;
     border-bottom: 1px solid #eee;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
 }
 
 .nav-logo {
@@ -12,10 +17,12 @@
     letter-spacing: 2px;
     text-decoration: none;
     color: #7f471f;
+    margin-left: 30px;
 }
 
 .nav-cart {
     max-width: 30px;
     width: 100%;
     display: block;
+    margin-right: 30px;
 }
