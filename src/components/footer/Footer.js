@@ -30,6 +30,8 @@ class Footer extends Component {
         axios.post('http://api.vtexcrm.com.br/corebiz/dataentities/TE/documents', this.state)
             .then(response => console.log(response))
             .catch(err => console.log(err));
+
+        this.setState({name: '', email: ''});
     }
 
     render() {
