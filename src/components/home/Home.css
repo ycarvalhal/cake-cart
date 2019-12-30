@@ -1,0 +1,115 @@
+.products-title {
+    font-size: 1.25em;
+    color: #333;
+    text-align: center;
+    padding: 7% 0;
+    letter-spacing: 2px;
+}
+
+.products-box {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    width: 100%;
+    max-width: 200px;
+    margin-bottom: 20px;
+    color: #eee;
+    box-shadow: 0px 0px 4px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.card-img {
+    max-width: 150px;
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+}
+
+.card-title, .card-price, .card-btn {
+    display: block;
+    width: 85%;
+    max-width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    color: #555;
+    font-size: 1em;
+}
+
+.card-title {
+    min-height: 32px;
+}
+
+.card-price {
+    font-size: .825em;
+    color: #ffd0cb;
+}
+
+.card-price span {
+    font-size: 1.5em;
+}
+
+.card-btn {
+    background-color: #ffd0cb;
+    color: #fff;
+    font-size: .725em;
+    text-align: center;
+    padding: 7px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px 0;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.card-btn-cart {
+    max-width: 30px;
+    width: 15%;
+    filter: invert(100%);
+    margin-left: 5px;
+}
+
+@media (min-width: 800px) {
+    .products-box {
+        flex-direction: row;
+        align-items: baseline;
+    }
+
+    .card {
+        overflow: hidden;
+        height: 190px;
+        justify-content: initial;
+        transition: ease .3s;
+        margin-bottom: 0;
+    }
+    
+    .card:hover {
+        color: #bbb;
+        height: 250px;
+        transition: ease .3s;
+    }
+
+    .card-btn {
+        opacity: 0;
+        transition: ease .3s;
+    }
+
+    .card:hover .card-btn {
+        display: flex;
+        opacity: 1;
+        transition: ease .3s;
+    }
+}

@@ -1,0 +1,21 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.nav-logo {
+    font-size: 1.25em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: #7f471f;
+}
+
+.nav-cart {
+    max-width: 30px;
+    width: 100%;
+    display: block;
+}
